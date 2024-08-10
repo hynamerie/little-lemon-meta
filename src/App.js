@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import Reserve from './components/Reservation/Reserve';
+import Contact from './components/Reservation/Contact';
+import Review from './components/Reservation/Review';
+import ReserveLayout from './components/Reservation/ReserveLayout';
+import Deposit from './components/Reservation/Deposit';
+import Congrats from './components/Reservation/Congrats';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route></Route>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/reservations' element={<ReserveLayout/>}>
+          <Route index element={<Reserve/>} />
+          <Route path='/reservations/2' element={<Contact />}/>
+          <Route path='/reservations/3' element={<Review />}/>
+          <Route path='/reservations/4' element={<Deposit />}/>
+        </Route>
+        <Route path='/success' element={<Congrats/>} />
+      
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
