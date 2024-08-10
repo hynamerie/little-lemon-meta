@@ -12,10 +12,9 @@ import Congrats from './components/Reservation/Congrats';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/little-lemon-meta'>
       <Navbar/>
       <Routes>
-        <Route></Route>
         <Route path='/' element={<Home/>}/>
         <Route path='/reservations' element={<ReserveLayout/>}>
           <Route index element={<Reserve/>} />
