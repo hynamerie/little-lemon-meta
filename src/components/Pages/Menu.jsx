@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./pages.css"
+import { useSearchParams, Link } from 'react-router-dom';
 
 const Menu = () => {
   const [dishes, setDishes] = useState([]);
@@ -9,23 +10,47 @@ const Menu = () => {
     .then((data => setDishes(data.dishes)))
   }, [])
 
-  const specialDishes = dishes.map(dish => (
+  const [searchParams, setSearchParams] = useSearchParams();
+  const typeFilter = searchParams.get("type");
+  const displayedDishes = typeFilter ? dishes.filter(dish => dish.type === typeFilter) : dishes
+
+  const specialDishes = displayedDishes.map(dish => (
     <div key={dish.name} className="dish-card">
-      <div className="card-img">
-        <img src={dish.image} alt="special-dish" />
-      </div>
-      <div className="card-info">
-        <div className="card-name">
-          <h3>{dish.name}</h3>
-          <div className='price'>{dish.price}</div>
+      <Link to={dish.name} 
+        state={{
+          // search: `?${searchParams.toString()}`, type: typeFilter
+          search: searchParams, type: typeFilter
+
+        }}
+      >
+        <div className="card-img">
+          <img src={dish.image} alt="special-dish" />
         </div>
-        <div className='card-description'>
-          <p>{dish.description}</p>
+        <div className="card-info">
+          <div className="card-name">
+            <h3>{dish.name}</h3>
+            <div className='price'>{dish.price}</div>
+          </div>
+          <div className='card-description'>
+            <p>{dish.description}</p>
+          </div>
+          <button>Order Now</button>
         </div>
-        <button>Order Now</button>
-      </div>
+      </Link>
     </div>
   ))
+
+  function handleFilterChange(key, value) {
+    setSearchParams(prevParams => {
+        if (value === null) {
+            prevParams.delete(key)
+        } else {
+            prevParams.set(key, value)
+        }
+        return prevParams
+    })
+  }
+
 
   return (
     <>
@@ -33,22 +58,23 @@ const Menu = () => {
       <h1>Our Menu</h1>
     </div>
     <div className="body menu">
-      <div className="special-head">
-        <h2>Specials Today!</h2>
+      <div>
+        <h2>Expore our dishes</h2>
+        <div className='menu-tab'>
+          <button className={`btn-menu ${typeFilter === null ? "selected" : null}`} onClick={() => handleFilterChange("type", null)}
+          >All</button>
+          <button className={`btn-menu ${typeFilter === "1" ? "selected" : null}`} onClick={() => handleFilterChange("type", 1)}
+          >Lunch</button>
+          <button className={`btn-menu ${typeFilter === "2" ? "selected" : null}`} onClick={() => handleFilterChange("type", 2)}
+          >Mains</button>
+          <button className={`btn-menu ${typeFilter === "3" ? "selected" : null}`} onClick={() => handleFilterChange("type", 3)}
+          >Desserts</button>
+        </div>
       </div>
       <div className='dish-layout'>
         {specialDishes}
       </div>
     </div>
-    <div className="body menu">
-      <div className="special-head">
-        <h2>All</h2>
-      </div>
-      <div className='dish-layout'>
-        {}
-      </div>
-    </div>
-
 
     </>
   )

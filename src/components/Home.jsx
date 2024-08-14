@@ -46,7 +46,7 @@ export default function Home() {
         <div className="body specials">
           <div className="special-head">
             <h2>Specials Today!</h2>
-            <button className="btn-yes">Online Menu</button>
+            <Link to="/menu">  <button className="btn-yes">Online Menu</button></Link>
           </div>
           <div className='special-dish'>
             {specials.map(dish => (

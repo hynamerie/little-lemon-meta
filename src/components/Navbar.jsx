@@ -26,7 +26,9 @@ export default function Navbar() {
 
       <nav className='navbar'>
         <ul>
-          <li><a href="">Home</a></li>
+          <li onClick={checkHandler}>
+            <Link to="/">Home</Link>
+            </li>
           <li onClick={checkHandler}>
             <Link to="/about">About</Link>
             </li>
