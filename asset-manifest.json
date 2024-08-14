@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/little-lemon-meta/static/css/main.ecf923c5.css",
-    "main.js": "/little-lemon-meta/static/js/main.2d873c2b.js",
+    "main.css": "/little-lemon-meta/static/css/main.366801e7.css",
+    "main.js": "/little-lemon-meta/static/js/main.8fe385bb.js",
     "static/media/restauranfood.jpg": "/little-lemon-meta/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/salad.png": "/little-lemon-meta/static/media/salad.d768338339878f7b6356.png",
-    "static/media/about1.png": "/little-lemon-meta/static/media/about1.385a3b78d0f291d6a1ee.png",
-    "static/media/about2.png": "/little-lemon-meta/static/media/about2.9d7b042c37d2dbc58c48.png",
     "static/media/brucheta.jpg": "/little-lemon-meta/static/media/brucheta.76ffdf955f2513574e6f.jpg",
+    "static/media/about1.jpg": "/little-lemon-meta/static/media/about1.cead74a2f0010a3bcac7.jpg",
+    "static/media/about2.jpg": "/little-lemon-meta/static/media/about2.5ee2127ea725acb4eb59.jpg",
     "static/media/small_logo.png": "/little-lemon-meta/static/media/small_logo.2c859235d6c57bb54176.png",
     "static/media/lemon.jpeg": "/little-lemon-meta/static/media/lemon.8220287a6a4ede050c48.jpeg",
     "static/media/Logo.svg": "/little-lemon-meta/static/media/Logo.fd87fc34e15316b670ea115ce700cd15.svg",
-    "static/media/lemon_mark.png": "/little-lemon-meta/static/media/lemon_mark.b8445110e4e49b6b30a0.png",
     "index.html": "/little-lemon-meta/index.html",
-    "main.ecf923c5.css.map": "/little-lemon-meta/static/css/main.ecf923c5.css.map",
-    "main.2d873c2b.js.map": "/little-lemon-meta/static/js/main.2d873c2b.js.map"
+    "main.366801e7.css.map": "/little-lemon-meta/static/css/main.366801e7.css.map",
+    "main.8fe385bb.js.map": "/little-lemon-meta/static/js/main.8fe385bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecf923c5.css",
-    "static/js/main.2d873c2b.js"
+    "static/css/main.366801e7.css",
+    "static/js/main.8fe385bb.js"
   ]
 }
