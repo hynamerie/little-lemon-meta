@@ -27,9 +27,15 @@ export default function Navbar() {
       <nav className='navbar'>
         <ul>
           <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Reservations</a></li>
+          <li onClick={checkHandler}>
+            <Link to="/about">About</Link>
+            </li>
+          <li onClick={checkHandler}>
+            <Link to="/menu">Menu</Link>
+            </li>
+          <li onClick={checkHandler}>
+            <Link to="/reservations">Reservations</Link>
+            </li>
           <li><a href="">Order Online</a></li>
           <li><a href="">Login</a></li>
         </ul>

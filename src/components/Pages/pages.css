@@ -1,0 +1,11 @@
+/* MENU */
+.dish-layout {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.dish-card {
+  width: 300px;
+}

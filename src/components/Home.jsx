@@ -4,8 +4,8 @@ import heroimg from "../assets/restauranfood.jpg";
 import imgSalad from "../assets/salad.png";
 import imgBrushetta from "../assets/brucheta.jpg";
 import imgLemon from "../assets/lemon.jpeg";
-import aboutImg1 from "../assets/brucheta.jpg";
-import aboutImg2 from "../assets/lemon.jpeg";
+import aboutImg1 from "../assets/about1.png";
+import aboutImg2 from "../assets/about2.png";
 import { Link } from 'react-router-dom';
 
 export default function Home() {
