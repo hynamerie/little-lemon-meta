@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutImg1 from "../../assets/about1.png";
-import aboutImg2 from "../../assets/about2.png";
+import aboutImg1 from "../../assets/about1.jpg";
+import aboutImg2 from "../../assets/about2.jpg";
 
 
 const About = () => {
@@ -20,10 +20,10 @@ const About = () => {
       </div>
       <div className="about-img-contain">
         <div className="about-img" id='img1'>
-          <img src={aboutImg1} />
+          <img src={aboutImg1} alt=''/>
         </div>
         <div className="about-img" id='img2'>
-          <img src={aboutImg2} />
+          <img src={aboutImg2} alt=''/>
         </div>
       </div>
     </div>
