@@ -8,7 +8,7 @@ export default function Footer() {
         <img src={logoFooter} alt="" />
       </div>
       <div className='pages-footer'>
-        <ul className="page-footer">
+        <ul>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Menu</a></li>
@@ -16,7 +16,7 @@ export default function Footer() {
           <li><a href="">Order Online</a></li>
           <li><a href="">Login</a></li>
         </ul>
-        <ul className="page-footer">
+        <ul>
           <li>Address: <br/>
           214 Magazine St, <br /> New Orleans, Louisiana
           </li>
@@ -27,7 +27,7 @@ export default function Footer() {
             little-lemon@meta.com
           </li>
         </ul>
-        <ul className="page-footer">
+        <ul>
           <li><a href="">Facebook</a></li>
           <li><a href="">Instagram</a></li>
           <li><a href="">Youtube</a></li>

@@ -1,0 +1,40 @@
+/* MENU */
+.dish-layout {
+  margin: 20px 0 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.dish-layout .dish-card {
+  width: 260px;
+}
+.dish-card > a {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+.menu-tab {
+  display: flex;
+  gap: 10px;
+}
+.btn-menu {
+  padding: 16px 36px;
+  border-radius: 8px;
+  border: 0;
+  background: var(--Accent-2);
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn-menu:hover {
+  box-shadow: 0 0 0 0;
+  border: 0;
+  color: var(--Accent-1);
+}
+.btn-menu.selected {
+  background: var(--Accent-1);
+}
+.btn-menu.selected:hover {
+  color: white;
+}
+

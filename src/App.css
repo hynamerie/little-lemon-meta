@@ -115,8 +115,7 @@ button:hover {
 .footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20%;
+  justify-content: space-around;
   background-color: #EDEFEE;
   padding: 50px 12vw;
 }
@@ -132,6 +131,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  flex-wrap: wrap;  
 }
 .footer ul {
   list-style: none;
