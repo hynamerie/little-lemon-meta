@@ -11,6 +11,7 @@ import Deposit from './components/Reservation/Deposit';
 import Congrats from './components/Reservation/Congrats';
 import About from './components/Pages/About';
 import Menu from './components/Pages/Menu';
+import Page from './components/Pages/Page';
 import "./server";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path='/success' element={<Congrats/>} />
         <Route path='/about' element={<About/>}/>
         <Route path='/menu' element={<Menu/>}/>
+        <Route path='/page' element={<Page/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

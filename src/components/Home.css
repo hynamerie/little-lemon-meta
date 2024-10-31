@@ -1,3 +1,6 @@
+p {
+  font-size: 18px;
+}
 .hero {
   padding: 10vh 12vw;
   background-color: var(--Accent-2);
@@ -17,7 +20,7 @@
 }
 .hero-info p {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .hero-info button {
   margin-top: 30px;
@@ -88,13 +91,14 @@
 .special-dish {
   margin-top: 20px;
   display: flex;
-  gap: 5%;
+  gap: 30px 0;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .dish-card {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 320px;
   border-radius: 16px;
   overflow: hidden;
   background-color: #D3F3EF;
@@ -113,7 +117,10 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
+  button {
+    margin-top: 10px;
+  }
 }
 .card-name {
   display: flex;
@@ -121,7 +128,7 @@
   align-items: center;
 }
 .card-name h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
 }
 .card-name .price {
@@ -162,7 +169,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 50px 5%;
 }
 .testi-card {
   display: flex;

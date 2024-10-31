@@ -22,7 +22,10 @@ export default function Home() {
     },
     {name: 'Lemon Dessert', price: '$ 5.99', description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
       image: imgLemon
-    }
+    },
+    {name: 'Brushetta', price: '$ 7.99', description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ',
+      image: imgBrushetta
+    },
   ]
   const testimonials = [
     {name: "Lisa Gleichner", review: "The food was amazing, the staff were so polite and helpful.", img: rvImg1},
@@ -98,6 +101,7 @@ export default function Home() {
         <div className='body about'>
           <div className='about-info'>
             <h2>Our Story</h2>
+            <br />
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
